@@ -335,7 +335,7 @@ function optionsCheck() {
                 var LP = LPElement
             }else{
                 score = score
-                LP = LP
+                var LP = LP
             }
             console.log("2")
         }
