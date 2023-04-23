@@ -105,6 +105,7 @@ function optionsCheck() {
     Equip = 0
     Magic = 0
     Traps = 0
+    Used = 0
     score = 101
     CardElement.value = ""
     LPleftElement.value = ""
