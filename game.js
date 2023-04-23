@@ -23,7 +23,7 @@ var Equip = 0
 var Magic = 0
 var Traps = 0
 var Used = 0
-var LP = 8000
+var LifeP = 8000
 var score = 101
 gradeElement.innerText = "S POW" + " " + score
 
@@ -91,7 +91,7 @@ function optionsCheck() {
     } else if (button.value == "Submit") {        
         Health(LPElement, LP)
         Cards(CardsElement, Used)
-        LP = LPElement
+        LifeP = LPElement
         Used = 40 - CardsElement
         console.log(Used)
         console.log(LPElement)
@@ -242,9 +242,9 @@ function optionsCheck() {
         }
     }
 
-   function Health(LPElement, LP){
-        if (LP < LPElement){
-            if(LP < 100){
+   function Health(LPElement, LifeP){
+        if (LifeP < LPElement){
+            if(LifeP < 100){
                 if(LPElement >= 8000){
                     score = score + 13
                 }else if(LPElement >= 100 && LPElement < 1000){
@@ -256,8 +256,8 @@ function optionsCheck() {
                 }else{
                     score = score
                 }
-                var LP = LPElement
-            }else if(LP >= 100 && LP < 1000){
+                var LifeP = LPElement
+            }else if(LifeP >= 100 && LifeP < 1000){
                 if(LPElement >= 8000){
                     score = score + 11
                 }else if(LPElement >= 1000 && LPElement < 7000){
@@ -267,8 +267,8 @@ function optionsCheck() {
                 }else{
                     score = score
                 }
-                var LP = LPElement
-            }else if(LP >= 1000 && LP < 7000){
+                var LifeP = LPElement
+            }else if(LifeP >= 1000 && LifeP < 7000){
                 if(LPElement >= 8000){
                     score = score + 6
                 }else if(LPElement >= 7000 && LPElement < 8000){
@@ -276,55 +276,55 @@ function optionsCheck() {
                 }else{
                     score = score
                 }
-                var LP = LPElement
-            }else if(LP >= 7000 && LP < 8000){
+                var LifeP = LPElement
+            }else if(LifeP >= 7000 && LifeP < 8000){
                 if(LPElement >= 8000){
                     score = score + 2
                 }else{
                     score = score
                 }
-                var LP = LPElement
+                var LifeP = LPElement
             }else{
                 score = score
-                var LP = LP
+                var LifeP = LifeP
             }
             console.log("1")
-        }else if (LP > LPElement){
+        }else if (LifeP > LPElement){
             if(LPElement < 100){
-                if(LP >= 8000){
+                if(LifeP >= 8000){
                     score = score - 13
-                }else if(LP >= 100 && LP < 1000){
+                }else if(LifeP >= 100 && LifeP < 1000){
                     score = score - 2
-                }else if(LP >= 1000 && LP < 7000){
+                }else if(LifeP >= 1000 && LifeP < 7000){
                     score = score - 7
-                }else if(LP >= 7000 && LP < 8000){
+                }else if(LifeP >= 7000 && LifeP < 8000){
                     score = score - 11
                 }else{
                     score = score
                 }
-                var LP = LPElement
+                var LifeP = LPElement
             }else if(LPElement >= 100 && LPElement < 1000){
-                if(LP >= 8000){
+                if(LifeP >= 8000){
                     score = score -11
-                }else if(LP >= 1000 && LP < 7000){
+                }else if(LifeP >= 1000 && LifeP < 7000){
                     score = score -5
-                }else if(LP >= 7000 && LP < 8000){
+                }else if(LifeP >= 7000 && LifeP < 8000){
                     score = score - 9
                 }else{
                     score = score
                 }
-                var LP = LPElement
+                var LifeP = LPElement
             }else if(LPElement >= 1000 && LPElement < 7000){
-                if(LP >= 8000){
+                if(LifeP >= 8000){
                     score = score - 6
-                }else if(LP >= 7000 && LP < 8000){
+                }else if(LifeP >= 7000 && LifeP < 8000){
                     score = score - 4
                 }else{
                     score = score
                 }
-                var LP = LPElement
+                var LifeP = LPElement
             }else if(LPElement >= 7000 && LPElement < 8000){
-                if(LP >= 8000){
+                if(LifeP >= 8000){
                     score = score - 2
                     console.log(score)
                     console.log(LP)
@@ -332,10 +332,10 @@ function optionsCheck() {
                 }else{
                     score = score
                 }
-                var LP = LPElement
+                var LifeP = LPElement
             }else{
                 score = score
-                var LP = LP
+                var LifeP = LifeP
             }
             console.log("2")
         }
