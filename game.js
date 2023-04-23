@@ -345,27 +345,27 @@ function optionsCheck() {
         }
     }
 
-    function Cards(CardElement, Used){
+    function Cards(CardsElement, Used){
         
-        if(Used < 9 && CardElement <= 31 && CardElement > 27){
+        if(Used < 9 && CardsElement <= 31 && CardsElement > 27){
             score = score - 3
-        }else if(Used < 9 && CardElement <= 27 && CardElement > 7){
+        }else if(Used < 9 && CardsElement <= 27 && CardsElement > 7){
             score = score - 15
-        }else if(Used < 9 && CardElement <= 7 && CardElement > 3){
+        }else if(Used < 9 && CardsElement <= 7 && CardsElement > 3){
             score = score - 20
-        }else if(Used < 9 && CardElement <= 3){
+        }else if(Used < 9 && CardsElement <= 3){
             score = score - 22
-        }else if(Used < 13 && CardElement <= 27 && CardElement > 7){
+        }else if(Used < 13 && CardsElement <= 27 && CardsElement > 7){
             score = score - 12
-        }else if(Used < 13 && CardElement <= 7 && CardElement > 3){
+        }else if(Used < 13 && CardsElement <= 7 && CardsElement > 3){
             score = score - 17
-        }else if(Used < 13 && CardElement <= 3){
+        }else if(Used < 13 && CardsElement <= 3){
             score = score - 19
-        }else if(Used < 33 && CardElement <= 7 && CardElement > 3){
+        }else if(Used < 33 && CardsElement <= 7 && CardsElement > 3){
             score = score - 5
-        }else if(Used < 33 && CardElement <= 3){
+        }else if(Used < 33 && CardsElement <= 3){
             score = score - 7
-        }else if(Used < 37 && CardElement <= 3){
+        }else if(Used < 37 && CardsElement <= 3){
             score = score - 2
         }else{
             score = score
