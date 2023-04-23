@@ -89,7 +89,7 @@ function optionsCheck() {
     FTraps()
     console.log("turns:" + turns + ", Attacks:" + Attacks + ", Defense:" + Defense + ", Facedown:" + Facedown + ", Fusions:" + Fusion + ", Equips:" + Equip + ", Magic:" + Magic + ", Traps:" + Traps + ", score:" + score)
     } else if (button.value == "Submit") {        
-        Health(LPElement, LP)
+        Health(LPElement, LifeP)
         Cards(CardsElement, Used)
         LifeP = LPElement
         Used = 40 - CardsElement
