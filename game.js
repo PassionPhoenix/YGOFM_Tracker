@@ -345,7 +345,7 @@ function optionsCheck() {
         }
     }
 
-    function Cards(Used, CardElement){
+    function Cards(CardElement, Used){
         
         if(Used < 9 && CardElement <= 31 && CardElement > 27){
             score = score - 3
