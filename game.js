@@ -88,11 +88,11 @@ function optionsCheck() {
     Traps = Traps + 1;
     FTraps()
     console.log("turns:" + turns + ", Attacks:" + Attacks + ", Defense:" + Defense + ", Facedown:" + Facedown + ", Fusions:" + Fusion + ", Equips:" + Equip + ", Magic:" + Magic + ", Traps:" + Traps + ", score:" + score)
-    } else if (button.value == "Submit LP") {        
+    } else if (button.value == "Life") {        
         Health(LPElement, LifeP)
         LifeP = LPElement
         console.log("turns:" + turns + ", Attacks:" + Attacks + ", Defense:" + Defense + ", Facedown:" + Facedown + ", Fusions:" + Fusion + ", Equips:" + Equip + ", Magic:" + Magic + ", Traps:" + Traps + ", score:" + score)
-    } else if (button.value == "Submit Cards Remaining") {
+    } else if (button.id == "remain") {
         Cards(CardsElement, Used)
         Used = 40 - CardsElement
         console.log("turns:" + turns + ", Attacks:" + Attacks + ", Defense:" + Defense + ", Facedown:" + Facedown + ", Fusions:" + Fusion + ", Equips:" + Equip + ", Magic:" + Magic + ", Traps:" + Traps + ", score:" + score)
