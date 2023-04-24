@@ -106,7 +106,7 @@ function optionsCheck() {
     Magic = 0
     Traps = 0
     Used = 0
-    LPLife = 8000
+    LifeP = 8000
     score = 101
     CardElement.value = ""
     LPleftElement.value = ""
