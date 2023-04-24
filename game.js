@@ -108,6 +108,7 @@ function optionsCheck() {
     Used = 0
     LifeP = 8000
     score = 101
+    CardsElement = 40
     CardElement.value = ""
     LPleftElement.value = ""
     TurnElement.textContent = "Turns"
