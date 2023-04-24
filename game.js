@@ -88,7 +88,7 @@ function optionsCheck() {
     Traps = Traps + 1;
     FTraps()
     console.log("turns:" + turns + ", Attacks:" + Attacks + ", Defense:" + Defense + ", Facedown:" + Facedown + ", Fusions:" + Fusion + ", Equips:" + Equip + ", Magic:" + Magic + ", Traps:" + Traps + ", score:" + score)
-    } else if (button.value == "Life") {        
+    } else if (button.id == "Life") {        
         Health(LPElement, LifeP)
         LifeP = LPElement
         console.log("turns:" + turns + ", Attacks:" + Attacks + ", Defense:" + Defense + ", Facedown:" + Facedown + ", Fusions:" + Fusion + ", Equips:" + Equip + ", Magic:" + Magic + ", Traps:" + Traps + ", score:" + score)
