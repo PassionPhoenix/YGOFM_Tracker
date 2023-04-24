@@ -89,8 +89,7 @@ function optionsCheck() {
     FTraps()
     console.log("turns:" + turns + ", Attacks:" + Attacks + ", Defense:" + Defense + ", Facedown:" + Facedown + ", Fusions:" + Fusion + ", Equips:" + Equip + ", Magic:" + Magic + ", Traps:" + Traps + ", score:" + score)
     } else if (button.value == "Submit") {        
-        Health(LPElement, LifeP)
-        Cards(CardsElement, Used)
+        Text(LPElement, LifeP, CardsElement, Used)
         LifeP = LPElement
         Used = 40 - CardsElement
         console.log(Used)
@@ -124,6 +123,13 @@ function optionsCheck() {
 
    startGame(score)
 }
+
+  function Text(LPElement, LifeP, CardsElement, Used){
+        Health(LPElement, LifeP)
+        Cards(CardsElement, Used)
+        LifeP = LPElement
+        Used = 40 - CardsElement
+    }
 
   function Fturns() {
         if (turns == 5){
